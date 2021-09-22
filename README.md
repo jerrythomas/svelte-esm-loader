@@ -167,14 +167,14 @@ export default {
 
 ## References
 
-[brev/esm-loader-svelte](https://github.com/brev/esm-loader-svelte): the original implemention and starter for this package
-[alias]: https://www.npmjs.com/package/create-esm-loader#2-create-directory-aliases
-[chain]: https://www.npmjs.com/package/esm-loader-chaining-polyfill
-[jsdom]: https://github.com/modosc/global-jsdom
-[loaders]: https://nodejs.org/api/esm.html#esm_loaders
-[node]: https://github.com/nodejs/node
-[preprocess]: https://github.com/sveltejs/svelte-preprocess
-[svelte]: https://github.com/sveltejs/svelte
-[sveltekit]: https://github.com/sveltejs/kit
-[typemodule]: https://nodejs.org/api/packages.html#packages_package_json_and_file_extensions
-[uvu]: https://github.com/lukeed/uvu
+- [brev/esm-loader-svelte](https://github.com/brev/esm-loader-svelte): the original implemention and starter for this package
+- [alias](https://www.npmjs.com/package/create-esm-loader#2-create-directory-aliases)
+- [chain](https://www.npmjs.com/package/esm-loader-chaining-polyfill)
+- [jsdom](https://github.com/modosc/global-jsdom)
+- [loaders](https://nodejs.org/api/esm.html#esm_loaders)
+- [node](https://github.com/nodejs/node)
+- [preprocess](https://github.com/sveltejs/svelte-preprocess)
+- [svelte](https://github.com/sveltejs/svelte)
+- [sveltekit](https://github.com/sveltejs/kit)
+- [typemodule](https://nodejs.org/api/packages.html#packages_package_json_and_file_extensions)
+- [uvu](https://github.com/lukeed/uvu)
