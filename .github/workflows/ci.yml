@@ -25,7 +25,12 @@ jobs:
       with:
         version: ${{ matrix.pnpm-version }}    
     - name: Install dependencies
-      run: pnpm i
+      run: |
+        pnpm i
+        cd examples/svelte && pnpm i && pnpm link ../..
+        cd ../svelte-kit && pnpm i && pnpm link ../..
+        cd ../..
+
     - name: Run tests
-      run: pnpm test
+      run: pnpm test:all
       

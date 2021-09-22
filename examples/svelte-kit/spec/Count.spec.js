@@ -1,6 +1,6 @@
 import { test } from 'uvu'
 import * as assert from 'uvu/assert'
-import * as ENV from '@jerrythomas/svelte-esm-test-utils/env'
+import * as ENV from '@jt/svelte-esm-utils/env'
 
 // Relies on `setup/register`
 import Count from '../src/Count.svelte'

@@ -7,7 +7,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "test": "NODE_OPTIONS='--experimental-loader @jerrythomas/svelte-esm-test-utils' uvu -i setup spec",
+    "test": "NODE_OPTIONS='--experimental-loader @jt/svelte-esm-utils' uvu -i setup spec",
     "test:coverage": "c8 --include=src --all npm test"
   },
   "devDependencies": {
