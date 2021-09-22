@@ -1,15 +1,14 @@
 import { test } from 'uvu'
 import * as assert from 'uvu/assert'
-import * as ENV from '@jt/svelte-esm-utils/env'
+import { setup, reset, render, fire } from '@jt/svelte-esm-utils/env'
 
-// Relies on `setup/register`
 import Count from '../src/Count.svelte'
 
-test.before(ENV.setup)
-test.before.each(ENV.reset)
+test.before(setup)
+test.before.each(reset)
 
 test('should render with "5" by default', () => {
-  const { container } = ENV.render(Count)
+  const { container } = render(Count)
 
   assert.snapshot(
     container.innerHTML,
@@ -18,7 +17,7 @@ test('should render with "5" by default', () => {
 })
 
 test('should accept custom `count` prop', () => {
-  const { container } = ENV.render(Count, { count: 99 })
+  const { container } = render(Count, { count: 99 })
 
   assert.snapshot(
     container.innerHTML,
@@ -27,14 +26,14 @@ test('should accept custom `count` prop', () => {
 })
 
 test('should increment count after `button#incr` click', async () => {
-  const { container } = ENV.render(Count)
+  const { container } = render(Count)
 
   assert.snapshot(
     container.innerHTML,
     `<button id="decr">--</button> <span>5</span> <button id="incr">++</button>`
   )
 
-  await ENV.fire(container.querySelector('#incr'), 'click')
+  await fire(container.querySelector('#incr'), 'click')
 
   assert.snapshot(
     container.innerHTML,
@@ -43,14 +42,14 @@ test('should increment count after `button#incr` click', async () => {
 })
 
 test('should decrement count after `button#decr` click', async () => {
-  const { container } = ENV.render(Count)
+  const { container } = render(Count)
 
   assert.snapshot(
     container.innerHTML,
     `<button id="decr">--</button> <span>5</span> <button id="incr">++</button>`
   )
 
-  await ENV.fire(container.querySelector('#decr'), 'click')
+  await fire(container.querySelector('#decr'), 'click')
 
   assert.snapshot(
     container.innerHTML,

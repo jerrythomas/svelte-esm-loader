@@ -7,7 +7,7 @@ on:
       - beta
       - alpha
 jobs:
-  sentry:
+  release:
     name: Release
     runs-on: ubuntu-latest
     steps:
