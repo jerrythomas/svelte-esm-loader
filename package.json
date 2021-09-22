@@ -1,15 +1,15 @@
 {
-  "name": "@jerrythomas/svelte-esm-test-utils",
-  "version": "1.0.0-beta.1",
+  "name": "@jt/svelte-esm-utils",
+  "version": "1.0.0-beta.0",
   "description": "ESM Loader and additional utilities for Svelte testing",
   "author": "Jerry Thomas <me@jerrythomas.name>",
   "license": "MIT",
   "main": "src/index.js",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/jerrythomas/svelte-esm-test-utils/issues"
+    "url": "https://github.com/jerrythomas/svelte-esm-utils/issues"
   },
-  "homepage": "https://github.com/jerrythomas/svelte-esm-test-utils#readme",
+  "homepage": "https://github.com/jerrythomas/svelte-esm-utils#readme",
   "scripts": {
     "test": "uvu spec",
     "test:svelte": "cd examples/svelte && pnpm test",
