@@ -1,5 +1,5 @@
 {
-  "name": "@jt/svelte-esm-utils",
+  "name": "@jerrythomas/svelte-esm-utils",
   "version": "1.0.0-beta.0",
   "description": "ESM Loader and additional utilities for Svelte testing",
   "author": "Jerry Thomas <me@jerrythomas.name>",
