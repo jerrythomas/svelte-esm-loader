@@ -1,0 +1,19 @@
+{
+  "name": "svelte-kit-sample",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "test": "NODE_OPTIONS='--experimental-loader @jerrythomas/svelte-esm-test-utils' uvu -i setup spec",
+    "test:coverage": "c8 --include=src --all npm test"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "next",
+    "c8": "^7.9.0",
+    "jsdom": "^17.0.0",
+    "svelte": "^3.42.6",
+    "uvu": "^0.5.1"  
+  },
+  "type": "module"
+}

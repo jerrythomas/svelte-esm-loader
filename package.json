@@ -1,0 +1,55 @@
+{
+  "name": "@jerrythomas/svelte-esm-test-utils",
+  "version": "1.0.0-beta.0",
+  "description": "ESM Loader and additional utilities for Svelte testing",
+  "author": "Jerry Thomas <me@jerrythomas.name>",
+  "license": "MIT",
+  "main": "src/index.js",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jerrythomas/svelte-esm-test-utils/issues"
+  },
+  "homepage": "https://github.com/jerrythomas/svelte-esm-test-utils#readme",
+  "scripts": {
+    "test": "uvu spec",
+    "test:svelte": "cd examples/svelte && pnpm test",
+    "test:svelte-kit": "cd examples/svelte-kit && pnpm test",
+    "test:all": "pnpm test && pnpm test:svelte && pnpm test:svelte-kit",
+    "release": "release-it --preRelease=beta",
+    "coverage": "c8 --include src --all pnpm test"
+  },
+  "files": [
+    "src"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./src/index.js"
+    },
+    "./env": {
+      "import": "./src/env.js"
+    }
+  },
+  "dependencies": {
+    "create-esm-loader": "^0.0.1-alpha.0",
+    "svelte": "^3.42.4",
+    "svelte-preprocess": "^4.9.3"
+  },
+  "devDependencies": {
+    "c8": "^7.9.0",
+    "jsdom": "^17.0.0",
+    "postcss": "^8.3.6",
+    "postcss-load-config": "^3.1.0",
+    "postcss-nested": "^5.0.6",
+    "release-it": "^14.11.6",
+    "uvu": "^0.5.1"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-nested": {}
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
