@@ -42,7 +42,7 @@ Add the test script to your `package.json`
 
 ```json
 "script": {
-    "test": "NODE_OPTIONS='--experimental-loader @jt/svelte-esm-utils' uvu test"
+    "test": "NODE_OPTIONS='--experimental-loader @jerrythomas/svelte-esm-utils' uvu test"
 }
 ```
 
@@ -51,7 +51,7 @@ In your component test script
 ```js
 import { test } from 'uvu'
 import * as assert from 'uvu/assert'
-import { setup, reset, render, fire } from '@jt/svelte-esm-utils/env'
+import { setup, reset, render, fire } from '@jerrythomas/svelte-esm-utils/env'
 
 test.before(setup)
 test.before.each(reset)
@@ -92,7 +92,7 @@ import Component from './Component.svelte'
 The same code will work successfully if we start Node.js with our loader:
 
 ```shell
-NODE_OPTIONS="--experimental-loader @jt/svelte-esm-utils" npm run test
+NODE_OPTIONS="--experimental-loader @jerrythomas/svelte-esm-utils" npm run test
 ```
 
 ### Complex
