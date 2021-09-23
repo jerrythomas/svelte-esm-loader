@@ -5,8 +5,8 @@ Contributions are welcome.
 ## Get the repo
 
 ```bash
-git clone https://github.com/jerrythomas/svelte-esm-utils
-cd svelte-esm-utils
+git clone https://github.com/jerrythomas/svelte-esm-loader
+cd svelte-esm-loader
 ```
 
 ## Set up and test

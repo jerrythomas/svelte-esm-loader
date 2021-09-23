@@ -1,6 +1,6 @@
 import { test } from 'uvu'
 import * as assert from 'uvu/assert'
-import { setup, reset, render, fire } from '@jerrythomas/svelte-esm-utils/env'
+import { setup, reset, render, fire } from 'svelte-facade'
 
 import Count from '../src/Count.svelte'
 

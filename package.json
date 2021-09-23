@@ -1,5 +1,5 @@
 {
-  "name": "@jerrythomas/svelte-esm-utils",
+  "name": "@jerrythomas/svelte-esm-loader",
   "version": "1.0.0-beta.1",
   "description": "ESM Loader and additional utilities for Svelte testing",
   "author": "Jerry Thomas <me@jerrythomas.name>",
@@ -7,9 +7,9 @@
   "main": "src/index.js",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/jerrythomas/svelte-esm-utils/issues"
+    "url": "https://github.com/jerrythomas/svelte-esm-loader/issues"
   },
-  "homepage": "https://github.com/jerrythomas/svelte-esm-utils#readme",
+  "homepage": "https://github.com/jerrythomas/svelte-esm-loader#readme",
   "scripts": {
     "test": "uvu spec",
     "test:svelte": "cd examples/svelte && pnpm test",
@@ -42,6 +42,7 @@
     "postcss-load-config": "^3.1.0",
     "postcss-nested": "^5.0.6",
     "release-it": "^14.11.6",
+    "svelte-facade": "^1.0.0-beta.1",
     "uvu": "^0.5.1"
   },
   "postcss": {
