@@ -1,7 +1,7 @@
 {
   "name": "@jerrythomas/svelte-esm-loader",
   "version": "1.0.0-beta.2",
-  "description": "ESM Loader and additional utilities for Svelte testing",
+  "description": "ESM Loader for Svelte",
   "author": "Jerry Thomas <me@jerrythomas.name>",
   "license": "MIT",
   "main": "src/index.js",
