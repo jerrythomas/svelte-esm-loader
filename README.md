@@ -9,7 +9,7 @@ This is primarily intended to be used along with [uvu](https://github.com/lukeed
 ## Usage
 
 ```shell
-npm install --save-dev @jerrythomas/svelte-esm-loader
+npm install --save-dev @jerrythomas/svelte-esm-loader@beta
 ```
 
 Add the test script to your `package.json`
