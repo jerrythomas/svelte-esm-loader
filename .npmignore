@@ -1,0 +1,7 @@
+*.yaml
+*.md
+*.config.js
+.prettierignore
+.github/
+spec/
+examples/
