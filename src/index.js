@@ -104,7 +104,5 @@ const svelteLoader = {
 	}
 }
 
-const { resolve, getFormat, getSource, transformSource, load } =
-	createLoader(svelteLoader)
-
-export { resolve, getFormat, getSource, transformSource, load }
+export const { resolve, getFormat, getSource, transformSource, load } =
+	await createLoader(svelteLoader)

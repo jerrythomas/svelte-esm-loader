@@ -31,22 +31,22 @@
     }
   },
   "dependencies": {
-    "create-esm-loader": "^0.0.1-alpha.0",
-    "svelte": "^3.42.4",
-    "svelte-preprocess": "^4.9.3"
+    "svelte": "^3.44.1",
+    "svelte-preprocess": "^4.9.8"
   },
   "devDependencies": {
-    "c8": "^7.9.0",
+    "c8": "^7.10.0",
+    "create-esm-loader": "^0.1.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "jsdom": "^17.0.0",
-    "postcss": "^8.3.6",
+    "postcss": "^8.3.11",
     "postcss-load-config": "^3.1.0",
     "postcss-nested": "^5.0.6",
     "prettier": "^2.4.1",
     "release-it": "^14.11.6",
     "svelte-facade": "^1.0.0-beta.1",
-    "uvu": "^0.5.1"
+    "uvu": "^0.5.2"
   },
   "postcss": {
     "plugins": {
